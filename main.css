@@ -434,12 +434,11 @@ h3 {
 	}
 
 	.add-todo__wrapper {
-		width: 240px;
-
-	}
+		width: 250px;
+ 	}
 
 	.todo__item {
-		width: 400px;
+		width: 250px;
 	}
 
 	.description {
