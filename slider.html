@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PHOTO GALLERY</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="page">
+    <header class="header">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="index.html"><img class="logo" alt="logo" src="img/LOGO.png" width=200px></a>
+        </div>
+        <nav class="nav__menu">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link">MAIN</a></li>
+            <li class="menu__item"><a href="contact.html" class="menu__link">CONTACT</a></li>
+            <li class="menu__item"><a href="timetable.html" class="menu__link">TIMETABLE</a></li>
+            <li class="menu__item"><a href="slider.html" class="menu__link">SLIDER</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </header>
+
+
+<main>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://st2.depositphotos.com/3332885/5303/i/950/depositphotos_53032047-stock-photo-flame-towers.jpg", alt="Az1"></div>
+            <div class="swiper-slide"><img src="https://wikiway.com/upload/resize_cache/uf/1be/1024_800_1/azerbaidjan_2.jpg", alt="Az2"></div>
+            <div class="swiper-slide"><img src="https://i.pinimg.com/originals/83/86/96/838696a579125f5ec17245b0ae5bbf19.jpg", alt="Az3"></div>
+            <div class="swiper-slide"><img src="https://img.ednews.net/news/2018/10/photo_326949.jpg?v=MjAxOC0xMC0xMiAxMTo0MjoxNQ==", alt="Az4"></div>
+            <div class="swiper-slide"><img src="http://d39raawggeifpx.cloudfront.net/styles/16_9_desktop/s3/articleimages/%C4%B0mamzad%C9%99_t%C3%BCrb%C9%99si_(G%C9%99nc%C9%99)_2_(2)_Cropped.jpg", alt="Az5"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</main>
+</body>
+</html>
