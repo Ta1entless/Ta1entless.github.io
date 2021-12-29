@@ -313,8 +313,8 @@ h3 {
 	display: flex;
 	align-items: center;
 	color: floralwhite;
-  text-transform: uppercase;
-  font-size: 25px;
+  	text-transform: uppercase;
+  	font-size: 25px;
 }
 
 .buttons {
@@ -424,13 +424,33 @@ h3 {
 			margin: 20px 0 0 0;
 			text-align: center;
 		}
-		h1 {
-			font-size: 25px;
-		}
 
-		p {
-			font-size: 13px;
-		}
+	h1, h4, h3{
+		font-size: 25px;
+	}
+
+	p 	{
+		font-size: 13px;
+	}
+
+	.add-todo__wrapper {
+		width: 240px;
+
+	}
+
+	.todo__item {
+		width: 400px;
+	}
+
+	.description {
+		font-size: 10px;
+	}
+
+	.input__wrapper input {
+		margin-top: 28px;
+	}
+
+
 }
 
 @keyframes opacity {
