@@ -1,80 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="description" content="Photo gallery" name="keywords" content="gallery">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Passions+Conflict&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/23d62b8ba3.js" crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<title>PHOTO GALLERY</title>
+
 </head>
 <body>
-		<header class="header">
-		<link rel="icon" href="favicon.jpg">
-		
 
-
-
-			<div class="nav__container">
-				<div class="nav__logo">
-					<a href="index.html"><img class="logo" alt="logo" src="img/LOGO.png" width=200px></a>
-				</div>
-				<nav class="nav__menu">
-					<ul class="menu">
-						<li class="menu__item"><a href="index.html" class="menu__link">MAIN</a></li>
-						<li class="menu__item"><a href="contact.html" class="menu__link">CONTACT</a></li>
-						<li class="menu__item"><a href="timetable.html" class="menu__link">TIMETABLE</a></li>
-						<li class="menu__item"><a href="slider.html" class="menu__link">SLIDER</a></li>
-					</ul>
-				</nav>
+	<header>
+	<link rel="icon" href="favicon.jpg">
+		<div class="nav__container">
+			<div class="nav__logo">
+				<a href="index.html"><img class="logo" alt="logo" src="img/LOGO.png" width=200px></a>
 			</div>
-		</header>
-
- 
-		<main class="main">
-			<div class="main__container">
-				<div class="title__name">
-					<h1>Saint-Petersburg</h1>
-				</div>			
-				<p>One of the best times to visit St. Petersburg (Russia) is winter. The idea of a cold, harsh Russian winter that comes to mind is far from the truth. At this time of year, all of Russia becomes festive and full of activity, the streets and parks turn into wonderlands of snow and frost with families out and about strolling and taking in the beautiful nature. Young and old are skiing, ice skating and sledding. The theaters and museums are open and are less crowded than during other seasons. The Mariinsky Ballet and Opera and the Bolshoi Ballet are in the middle of their seasons while in the summer, they are usually away from Russia on foreign tours. Winter is also the time of the most important and liveliest Russian holidays, New Years Eve followed by Christmas and then the Old New Year celebration. Winter is truly the best time of year to experience the true warmth of the Russian people and enjoy Russian culture.
-				</p>
-			</div>
-			<div class="gallery__spb">
-			<input checked type="radio" name="respond" id="desktop">
-				<article id="slider">
-						<input checked type="radio" name="slider" id="switch1">
-						<input type="radio" name="slider" id="switch2">
-						<input type="radio" name="slider" id="switch3">
-						<input type="radio" name="slider" id="switch4">
-						<input type="radio" name="slider" id="switch5">
-					<div id="slides">
-						<div id="overflow">
-							<div class="image">
-								<article><img src="img/img__spb1.jpeg"></article>
-								<article><img src="img/img__spb2.jpeg"></article>
-								<article><img src="img/img__spb3.jpeg"></article>
-								<article><img src="img/img__spb4.jpeg"></article>
-								<article><img src="img/img__spb5.jpeg"></article>
-							</div>
+			<nav class="nav__menu">
+				<ul class="menu">
+					<li class="menu__item"><a href="index.html" class="menu__link active">MAIN</a></li>
+					<li class="menu__item"><a href="contact.html" class="menu__link">CONTACT</a></li>
+					<li class="menu__item"><a href="timetable.html" class="menu__link">TIMETABLE</a></li>
+					<li class="menu__item"><a href="slider.html" class="menu__link">SLIDER</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<article class="saint-petersburg">
+		<div class="main__container">
+			<h1>Saint-Petersburg</h1>		
+			<p>One of the best times to visit <strong>St. Petersburg</strong><sup><ins>(Russia)</ins></sup> is winter. The idea of a cold, harsh Russian winter that comes to mind is far from the truth. At this time of year, all of Russia becomes festive and full of activity, the streets and parks turn into wonderlands of snow and frost with families out and about strolling and taking in the beautiful nature. Young and old are skiing, ice skating and sledding. </p> 
+			<p>The theaters and museums are open and are less crowded than during other seasons. The Mariinsky Ballet and Opera and the <b>Bolshoi Ballet</b> are in the middle of their seasons while in the summer, they are usually away from Russia on foreign tours. Winter is also the time of the most important and liveliest Russian holidays, <mark>New Years Eve </mark>followed by Christmas and then the Old New Year celebration. Winter is truly the best time of year to experience the true warmth of the Russian people and enjoy Russian culture.
+			</p>
+		</div>
+		<div class="gallery__spb">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article><img src="img/img__spb1.jpeg"></article>
+							<article><img src="img/img__spb2.jpeg"></article>
+							<article><img src="img/img__spb3.jpeg"></article>
+							<article><img src="img/img__spb4.jpeg"></article>
+							<article><img src="img/img__spb5.jpeg"></article>
 						</div>
 					</div>
-					<div id="controls">
-						<label for="switch1"></label>
-						<label for="switch2"></label>
-						<label for="switch3"></label>
-						<label for="switch4"></label>
-						<label for="switch5"></label>
-					</div>
-					<div id="active">
-						<label for="switch1"></label>
-						<label for="switch2"></label>
-						<label for="switch3"></label>
-						<label for="switch4"></label>
-						<label for="switch5"></label>
-					</div>
-				</article>
-			</div>
-		</main>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+
+			</article>
+		</div>
+		</article>
+		<div class="table__container">
+			<table>
+				<!--<caption>ТОП-5 мест в Петербурге, которые нужно посетить хотя бы раз в жизни</caption><!-->
+				<thead>
+					<tr>
+						<th>Исаакиевский собор</th> 
+						<th>Эрмитаж и Дворцовая площадь</th> 
+						<th>Петербургский дацан</th> 
+						<th>Крейсер «Аврора»</th> 
+						<th>Храм Спаса на Крови</th> 
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Первый собор на Исаакиевской площади появился ещё в петровские времена, так как рабочим из Адмиралтейства нужно было своё культовое сооружение. Нынешний Исаакий — четвёртый и крупнейший в городе. До сих пор он является одним из самых высоких зданий в Петербурге (101,5 метра). Его строили при трёх государях. Свой проект талантливый молодой архитектор Огюст Монферран подавал ещё Александру I в 1818 году, рядом со строящимся храмом происходило восстание декабристов, главным куратором строительства был Николай I, который не дожил до освящения собора
+						</td>
+						<td>
+							Ансамбль Дворцовой образуют императорский Зимний дворец, здание Гвардейского корпуса, здание Главного штаба с Триумфальной аркой и Александровская колонна. Надо сказать, что прежде тут был луг, на нём паслись коровы, а нынешним лоском Дворцовая обязана эпохе Александра I, когда огромную площадь привели к единому стилю, а Монферран возвёл знаменитый Александрийский столп, ставший новой доминантой
+						</td>
+						<td>
+							Буддийский храм «Дацан Гунзэчойнэй» — «источник святого учения Всесострадающего Владыки-отшельника» и самый северный буддийский храм в мире, а также самый дорогой в Европе, построенный в начале XX века. Разрешение на строительство храма было получено в 1900 году, после чего в 1909 году представитель Далай-ламы XIII в России Агван Доржиев приобрёл участок земли на берегу Малой Невки
+						</td>
+						<td>
+							Этот крейсер был в советское время более известен как символ революции, а теперь сюда ходят, чтобы посмотреть на красочную экспозицию, посвящённую одной из самых трагичных страниц истории российского флота — истории начала XX века: его экипаж был свидетелем всех печальных событий, обрушившихся на Россию в те времена.
+						</td>
+						<td>
+							Одно из самых странных архитектурных сооружений в Петербурге. Расположенный среди памятников эпохи ампира и классицизма, он выглядит инородным телом, детищем эпохи правления самого-русского-царя Александра III, больше подходящим для Москвы, нежели для Петербурга
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
 		<footer class="footer">
 			<div class="social__icons">
 				<a href="https://vk.com/cishope"><i class="fab fa-vk"></i></a>
@@ -83,7 +117,6 @@
 				<a href="#"><i class="fab fa-github"></i></a>	
 			</div>
 		</footer>
-	</div>
 	<script src="js/activepage.js"></script>
 	<script src="js/loadpage.js"></script>
 </body>
