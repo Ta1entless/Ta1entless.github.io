@@ -5,7 +5,10 @@ window.onload=function(e) {
     window.location.reload(true);
   } else {
     var loadingTime = new Date().getTime() - sample;
-    alert('Page loaded in: ' + loadingTime + 'milliseconds')
+    let div = document.createElement('div');
+    div.className = 'loadpage';
+    div.innerHTML = 'Page loaded in: ' + loadingTime + ' milliseconds';
+    document.body.append(div);
     localStorage.removeItem("loadTime")
   }
 }

@@ -1,6 +1,7 @@
 const addTaskBtn = document.getElementById('add-task-btn');
 const deskTaskInput = document.getElementById('description-task');
 const todosWrapper = document.querySelector('.todos__wrapper');
+const addTaskKey = document.getElementById('description-task');
 
 let tasks;
 let todoItemElems = [];
@@ -11,6 +12,15 @@ function Task(description) {
 	this.description = description;
 	this.completed = false;
 }
+
+/*const createT = (task, index) => {
+	var template  = document.querySelector(#element__task)
+	const desc = template.content.querySelector(#desc)
+	const span = template.content.querySelector('span')
+	
+
+}*/
+
 const createTemplate = (task, index) => {
 	return `
 		<div class="todo__item ${task.completed ? 'checked' : ""}">
@@ -65,10 +75,23 @@ const completeTask = index => {
 	fillHtmlList();
 }
 
+addTaskKey.addEventListener('keydown', () => {
+	if (event.keyCode == 13)  {
+		tasks.push(new Task(deskTaskInput.value));
+		console.log('Key: ', event.key);
+		updateLocal();
+		fillHtmlList();
+		deskTaskInput.value = '';
+	}
+})
+
+
 addTaskBtn.addEventListener('click', () => {
 	tasks.push(new Task(deskTaskInput.value));
+	console.log('Key: ', event.key);
 	updateLocal();
 	fillHtmlList();
 	deskTaskInput.value = '';
+	
 })
 
